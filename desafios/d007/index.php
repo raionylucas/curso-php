@@ -19,7 +19,7 @@
     ?>
     <main>
         <section class="formulario">
-            <h1>Anatomia de uma divisão</h1>
+            <h1>Calculadora de Salário</h1>
             <form action="<?= $_SERVER["PHP_SELF"] ?>">
                 <label for="salario">Salário (R$)</label>
                 <input type="number" name="salario" id="salario" value="<?= $salario ?>">
