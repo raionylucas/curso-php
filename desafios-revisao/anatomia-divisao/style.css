@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+
+  /* cor padrão da fonte */
+  color: #070707;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  padding: 48px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.formulario h1 {
+  text-align: center;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.formulario form label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.formulario form input[type="number"],
+.formulario form input[type="submit"] {
+  margin-bottom: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #c6c6c6;
+}
+
+.formulario form input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.formulario form input[type="submit"] {
+  margin-top: 16px;
+  border: none;
+  background-color: #070707;
+  cursor: pointer;
+
+  color: #fff;
+  font-size: 1rem;
+}
+
+.resultado h2 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* TABELAS E LISTAS */
+
+table {
+  min-width: 400px;
+  border-spacing: 0px;
+  border: 0.5px solid #372991;
+  margin: 10px auto;
+}
+
+table th {
+  background-color: #372991;
+  color: white;
+  padding: 5px;
+  text-align: left;
+}
+
+table td {
+  padding: 5px;
+}
+
+table tr {
+  background-color: rgba(55, 41, 145, 0.05);
+}
+
+table tr:nth-child(odd) {
+  background-color: rgba(55, 41, 145, 0.3);
+}
+
+table.divisao {
+  border: 1px solid white;
+}
+
+table.divisao td {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+table.divisao tr:nth-child(1) td:nth-child(2) {
+  border-bottom: 3px solid black;
+  border-left: 3px solid black;
+}
+
+table.divisao tr:nth-child(2) td:nth-child(2) {
+  border-left: 3px solid black;
+}
+
+table.divisao tr:nth-child(2) td:nth-child(1) {
+  text-decoration: underline;
+}
+
+ul > li::marker {
+  color: #372991;
+}
